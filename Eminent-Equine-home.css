@@ -1,0 +1,705 @@
+/* Playfair Display Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* font-family: "Playfair Display", serif; */
+
+/* Montserrat Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Body Default Css  */
+:root {
+  --text-color-ff: #fff;
+  --text-color-00: #000;
+  --btn-bg-color: #d9d9d9;
+  --white: #fff;
+  --section-box-bg: #171717;
+  --fl-boxes-bg: #d9d9d9;
+  --font-family: "Playfair Display", serif;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--section-box-bg);
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header + Banner Section CSS */
+.background-img-banner {
+  background: url("Images/Banner-bg-img") no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+}
+.navigation-bar {
+  padding: 30px 0px;
+}
+/* Navigation Css */
+.slider-toggle-btn {
+  background: none;
+  color: var(--text-color-ff);
+  font-size: 38px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  pointer-events: all;
+}
+.nav-slider-list {
+  position: fixed;
+  top: 0;
+  left: -80%;
+  background: rgba(0, 0, 0, 0.664);
+  height: 100%;
+  width: 40%;
+  padding: 50px;
+  z-index: 99;
+  transition: 0.6s all ease;
+}
+.overlay-bg {
+  position: fixed;
+  background: #0000005c;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 9;
+  transition: 0.3s all ease;
+}
+.close-btn-styl {
+  margin-bottom: 20px;
+}
+.nav-list-link {
+  margin-bottom: 20px;
+}
+.nav-list-link a {
+  color: var(--text-color-ff);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.white-btn-styl a {
+  font-size: 22px;
+  color: var(--text-color-00);
+  font-weight: 300;
+  padding: 10px 30px;
+  background: var(--btn-bg-color);
+  display: inline-flex;
+  border-radius: 50px;
+  transition: 0.3s all ease;
+}
+.white-btn-styl a:hover {
+  background: var(--white);
+}
+
+/* Banner Section CSS */
+.banner-logo-img {
+  padding: 100px 0px;
+}
+.banner-img {
+  width: 400px;
+  height: 400px;
+}
+.banner-main-heading h1 {
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--text-color-ff);
+}
+.open-slider {
+  left: 0 !important;
+}
+.down-arrow-btn {
+  position: absolute;
+  right: 0;
+  left: 8%;
+  bottom: -12%;
+}
+.down-arrow-btn {
+  animation: 2s down infinite;
+}
+
+.arrow-btn-styl {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  i {
+    font-size: 18px;
+    color: var(--text-color-00);
+  }
+}
+
+/* Categary Slider Section CSS */
+.categarySlider {
+  background: var(--section-box-bg);
+  padding: 100px 0px;
+}
+.cat-slide-box {
+  background: url("Images/Slide-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 280px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+.cat-slide-box:hover {
+  scale: 1.07;
+}
+.img-2 {
+  background-image: url("Images/Slide-2.jpg");
+}
+.img-3 {
+  background-image: url("Images/Slide-3.jpg");
+}
+.img-4 {
+  background-image: url("Images/Slide-4.jpg");
+}
+.categary-slider-boxes a {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color-ff);
+  text-transform: uppercase;
+}
+.box-content-slider {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(23, 23, 23, 0.7);
+  padding: 10px 0px;
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+.custom-slider-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+
+/* New Eminenr Slider Section */
+.New-Eminent-slider {
+  background: var(--section-box-bg);
+  padding: 100px 0px;
+}
+.mainHeading {
+  margin-bottom: 30px;
+  h2 {
+    font-family: var(--font-family);
+    font-size: 42px;
+    color: var(--text-color-ff);
+    text-transform: uppercase;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #878787;
+    text-transform: uppercase;
+  }
+}
+.box-content-slider p {
+  text-transform: uppercase;
+  color: var(--text-color-ff);
+}
+.eminent-img-1 {
+  background-image: url("Images/Bawnduggie-Gabrielle-horse.jpg");
+}
+.eminent-img-2 {
+  background-image: url("Images/Bawnduggie-Condet-Horse.jpg");
+}
+.eminent-img-3 {
+  background-image: url("Images/Cole-Black-Horse.jpg");
+}
+.eminent-img-4 {
+  background-image: url("Images/Cash-Mont-Bling-Horse.jpg");
+}
+.eminent-img-5 {
+  background-image: url("Images/Erin-spin-Horse.jpg");
+}
+.eminent-img-6 {
+  background-image: url("Images/One-time-Design-Horse.jpg");
+}
+.eminent-img-7 {
+  background-image: url("Images/Cash-Mont-Bling-Horse.jpg");
+}
+.eminent-img-8 {
+  background-image: url("Images/ConMello-Horse.jpg");
+}
+.eminent-img-9 {
+  background-image: url("Images/Stylish-Mello-Hourse.jpg");
+}
+
+/* Mears Horse Detail Section CSS */
+.Mears-Horse-Detials-sec {
+  background: var(--section-box-bg);
+}
+.Mears-Horse-img {
+  width: 100%;
+  height: 100%;
+}
+.Horse-Content {
+  color: var(--text-color-ff);
+  padding: 50px;
+}
+.pd {
+  padding: 0 !important;
+}
+.Horse-name {
+  margin-bottom: 40px;
+  h2 {
+    font-family: var(--font-family);
+    font-size: 42px;
+    color: var(--text-color-ff);
+  }
+}
+.sub-heading h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #878787;
+}
+.Horse-Para p {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 300;
+}
+.Horse-list,
+.det-lis {
+  margin: 25px 0px;
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.horse-btn {
+  margin-top: 30px;
+}
+
+/* Stallion Horse Section */
+.Stallion-Horse-Detials-sec {
+  background: var(--btn-bg-color);
+}
+.stallions-Horse-img {
+  width: 100%;
+  height: 100%;
+}
+.txt-chng {
+  color: var(--text-color-00);
+  h2 {
+    color: var(--text-color-00);
+  }
+}
+.Stallion-Horse-Content {
+  color: var(--text-color-00);
+}
+.black-btn a {
+  background: var(--section-box-bg);
+  color: var(--text-color-ff);
+  border: 1px solid;
+}
+.black-btn a:hover {
+  color: var(--text-color-00);
+}
+
+/* Latest Updates Profiles CSS */
+.latest-Updates-sec {
+  background: var(--section-box-bg);
+  padding: 50px 0px;
+}
+.Latest-update-img-2 {
+  background-image: url("Images/ConMon-Horse.jpg");
+}
+.Latest-update-img-3 {
+  background-image: url("Images/Metalic-Moon-Horese.jpg");
+}
+.Latest-update-img-4 {
+  background-image: url("Images/Stylish-Mello-Hourse.jpg");
+}
+.Latest-update-img-5 {
+  background-image: url("Images/One-time-Design-Horse.jpg");
+}
+.Latest-update-img-6 {
+  background-image: url("Images/Bawnduggie-Condet-Horse.jpg");
+}
+.Latest-update-img-7 {
+  background-image: url("Images/Mello-OKC-horse.jpg");
+}
+.Latest-update-img-8 {
+  background-image: url("Images/Erin-spin-Horse.jpg");
+}
+.Latest-update-img-9 {
+  background-image: url("Images/Bawnduggie-Gabrielle-horse.jpg");
+}
+
+/* Calender Slider Section */
+.calender-slider-sec {
+  background: var(--section-box-bg);
+  padding: 100px 0px;
+}
+.main-mid-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b2a199;
+  z-index: 0;
+}
+.month-box {
+  border: 1px solid var(--text-color-ff);
+  padding: 10px;
+  border-radius: 12px;
+  width: 60px;
+  z-index: 99;
+  background: var(--section-box-bg);
+  a p {
+    font-size: 12px;
+  }
+}
+.date-box {
+  background: var(--section-box-bg);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--text-color-ff);
+}
+.day-box p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.month h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.slider-item {
+  gap: 30px;
+  width: 150px;
+  z-index: 9;
+  padding: 100px 0px;
+  a {
+    color: var(--text-color-ff);
+  }
+}
+.even {
+  top: -40px;
+  margin: 0 auto;
+}
+.odd {
+  top: 50px;
+  margin: 0 auto;
+}
+.even::before,
+.odd::before {
+  content: "";
+  background: #b2a199;
+  left: 38%;
+  z-index: -1;
+  position: absolute;
+  height: 2px;
+  width: 25%;
+  transform: rotate(90deg);
+}
+.even::before {
+  top: 45%;
+}
+.odd::before {
+  top: 55%;
+}
+.postion-calender {
+  top: 44%;
+}
+
+/* Silver Gold Card Section */
+.sliver-gold-card-sec {
+  background: var(--btn-bg-color);
+  padding: 100px 0px 150px;
+}
+.silver-gold-card-heading {
+  h5,
+  h2 {
+    color: var(--text-color-00);
+  }
+}
+.sg-para p {
+  color: var(--text-color-00) !important;
+}
+/* Cards Section CSS */
+.silver-gold-cards {
+  background: var(--section-box-bg);
+  padding: 100px 0px;
+}
+.vaouchr-Card-fl {
+  gap: 20px;
+  position: relative;
+  margin-top: -220px;
+  z-index: 999;
+}
+.vaouchr-Card-fl > div {
+  flex: 0 35%;
+}
+.card-styl {
+  padding: 50px;
+  background: var(--text-color-ff);
+  border-radius: 20px;
+}
+.card-title h3 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  color: var(--fl-boxes-bg);
+}
+.silver-card-price p {
+  font-size: 52px;
+  font-weight: 700;
+}
+.silver-card-det {
+  padding: 20px 0px;
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+.silver-list {
+  gap: 10px;
+  margin-bottom: 20px;
+  p {
+    font-size: 14px;
+    color: var(--section-box-bg);
+  }
+}
+.gold-card {
+  background: #2e2e2e;
+}
+.gold-card-content h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--text-color-ff);
+}
+
+/* About Us CSS Section */
+.About-Us {
+  background: var(--section-box-bg);
+  padding: 100px 0px;
+}
+.about-us-sec-content > div {
+  flex: 0 48%;
+}
+.about-sec-img {
+  background: var(--fl-boxes-bg);
+  img {
+    margin: -20px 0px 20px -20px;
+  }
+}
+.sub-heading {
+  margin-bottom: 20px;
+  p {
+    font-size: 24px;
+    color: var(--text-color-ff);
+  }
+}
+.about-para {
+  margin-bottom: 20px;
+  p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+}
+
+/* Footer Section CSS */
+.footer-sec {
+  background: var(--section-box-bg);
+}
+.foooter-logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.footer-nav-links-sec > div {
+  flex: 0 33%;
+  padding: 30px;
+}
+.foot-heading {
+  margin-bottom: 20px;
+  h4 {
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.foot {
+  margin-bottom: 15px;
+  a {
+    font-size: 14px;
+    color: var(--text-color-ff);
+  }
+}
+.foot input {
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+.foot-btn {
+  width: 100%;
+  padding: 20px 0px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--text-color-ff);
+  background: #b2a199;
+}
+.foot-social-link {
+  gap: 20px;
+  margin-top: 10px;
+}
+.foot-social a {
+  width: 40px;
+  height: 40px;
+  background: var(--text-color-ff);
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  color: var(--text-color-00);
+  font-size: 18px;
+}
+.footer-line {
+  background: var(--text-color-00);
+  color: var(--text-color-ff);
+  padding: 20px 0px;
+}
+.footer-copy-line p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-copy-right {
+  background: var(--text-color-00);
+  margin-bottom: 20px;
+}
+.copy-right-para {
+  padding: 10px 0px;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-color-ff);
+  }
+}
+/* Responsive Section CSS */
+@media (max-width: 992px) {
+  .background-img-banner {
+    height: 100vh;
+  }
+  .banner-img {
+    width: 350px;
+    height: 350px;
+  }
+  .banner-main-heading h1 {
+    font-size: 38px;
+  }
+  .down-arrow-btn {
+    bottom: -35%;
+  }
+  .cat-slide-box {
+    width: 200px;
+    height: 320px;
+  }
+  .mainHeading {
+    margin-bottom: 30px;
+  }
+  .about-us-sec-content {
+    gap: 30px;
+  }
+  .about-us-sec-content > div {
+    flex: 100%;
+  }
+  .about-sec-img img {
+    margin: 0;
+    background: none;
+  }
+  .vaouchr-Card-fl > div {
+    flex: 0 48%;
+    padding: 30px;
+  }
+  .footer-nav-links-sec > div {
+    flex: 1 48%;
+  }
+  .footer-nav-links-sec {
+    justify-content: center;
+  }
+}
+@media (max-width: 567px) {
+  .nav-slider-list {
+    left: -100%;
+    width: 100%;
+  }
+  .background-img-banner {
+    height: 670px;
+  }
+  .banner-img {
+    width: 200px;
+    height: 200px;
+  }
+  .banner-main-heading h1 {
+    font-size: 32px;
+  }
+  .down-arrow-btn {
+    bottom: 0%;
+  }
+  .Horse-Content {
+    padding: 30px;
+  }
+  .cat-slide-box {
+    width: 250px;
+    height: 380px;
+  }
+  .mainHeading h2 {
+    font-size: 32px;
+  }
+  .mainHeading h5 {
+    font-size: 14px;
+  }
+  .footer-nav-links-sec > div {
+    flex: 100%;
+    padding: 5px;
+  }
+  .vaouchr-Card-fl > div {
+    flex: 100%;
+    padding: 30px;
+  }
+}
+/* Animation Section */
+@keyframes down {
+  0% {
+    transform: translate(-50%, 25px);
+  }
+
+  50% {
+    transform: translate(-50%, 45px);
+  }
+  100% {
+    transform: translate(-50%, 25px);
+  }
+}
